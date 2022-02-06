@@ -4,6 +4,8 @@
   "description": "Selection of projects made by Microverse students",
   "main": "index.js",
   "scripts": {
+    "watch": "npx tailwindcss -i ./src/style.css -o ./dist/style.css --watch",
+    "build": "npx tailwindcss -i ./src/style.css -o ./dist/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

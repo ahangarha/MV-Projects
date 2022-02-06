@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/style.css" />
+    <title>MV Projects</title>
+  </head>
+  <body class="">
+    <header class="w-full xl:max-w-6xl xl:mx-auto fixed top-0 inset-x-0 flex justify-between items-center bg-indigo-900 px-6 text-white z-40">
+      <a href="#" class="text-lg font-bold py-4">MV Projects</a>
+      <nav class="hidden fixed inset-0 p-8 bg-indigo-900/95 sm:block sm:static sm:p-0 sm:bg-none">
+        <ul class="flex flex-col sm:flex-row uppercase text-xl sm:text-sm sm:font-bold">
+          <li class="self-end sm:hidden"><a href="#" id="closeMenu" class="p-3 hover:text-yellow-500 grid place-content-center">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+          </a></li>
+          <li><a href="https://github.com/ahangarha/MV-Projects/issues" class="p-3 hover:text-yellow-500 inline-block">Add</a></li>
+          <li><a href="https://github.com/ahangarha/MV-Projects/issues" class="p-3 hover:text-yellow-500 inline-block">Report</a></li>
+          <li><a href="https://github.com/ahangarha/MV-Projects" class="p-3 hover:text-yellow-500 inline-block">Source</a></li>
+        </ul>
+      </nav>
+      <a href="#" id="openMenu" class="p-4 sm:hidden">
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+      </a>
+    </header>
+
+    <section
+      class="xl:max-w-6xl xl:mx-auto py-20 px-4 mt-14 grid place-items-center text-gray-800 bg-gray-200 gap-4"
+    >
+      <h1 class="text-3xl font-bold text-yellow-600">We Build<br />We Grow</h1>
+      <p class="text-center">
+        Here, you can find a growing selection of projects made by students at
+        Microverse.
+      </p>
+    </section>
+
+    <section
+      class="w-full xl:max-w-6xl xl:mx-auto grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 px-4 py-8"
+    >
+      <div
+        class="border rounded-lg overflow-hidden flex flex-col shadow-lg hover:shadow-xl hover:border-gray-300 hover:scale-105 transition duration-300 cursor-pointer"
+      >
+        <img
+          class="h-28 md:h-40 object-cover object-top"
+          src="https://placeimg.com/640/480/any"
+          alt=""
+        />
+
+        <div class="flex flex-col gap-3 p-3 md:p-4 grow-1">
+          <h3 class="font-bold">Capstone 1</h3>
+          <p class="text-gray-600 text-sm">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, qui.
+          </p>
+        </div>
+
+        <div class="bg-gray-200 flex flex-col gap-1 text-xs p-3 grow-0">
+          <div class="flex items-center gap-2 font-bold">
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            <span>Author's name</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            <span>2 month ago</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="w-full text-center flex flex-col items-center py-16 px-4 mt-8 border-t bg-gray-800 text-gray-400"
+    >
+      <p>This is a Free/Libre and Open Source project under AGPL license.</p>
+      <a href="https://github.com/ahangarha/MV-Projects" class="text-gray-200 hover:text-yellow-500">Source Code</a>
+    </footer>
+
+  </body>
+</html>
