@@ -18,12 +18,30 @@ menuItems.forEach((item) => {
   item.addEventListener('click', (event) => toggleMenu(event, false));
 })
 
+function dateDiff(dateStr) {
+  const now = Date.now();
+  const date = new Date(dateStr);
+
+  const diffDays = Math.floor((now - date) / (1000 * 60 * 60 * 24));
+  console.log(now);
+
+  if (diffDays >= 60) {
+    return `${Math.floor(diffDays / 30)} months ago`;
+  } else if (diffDays >= 30) {
+    return `${Math.floor(diffDays / 30)} month ago`;
+  } else {
+    return `${diffDays} days ago`;
+  }
+}
+
 // inject projects
 const projectContainter = document.getElementById('projectContainter');
 
 if (projects.length) projectContainter.innerHTML = '';
 
 projects.forEach((project) => {
+  const cardTitle = project.title.length > 45 ? project.title.slice(0,40).concat('...') : project.title;
+  const cardDescription = project.description.length > 100 ? project.description.slice(0,90).concat('...') : project.description;
   projectContainter.innerHTML += `
   <div
       class="border rounded-lg overflow-hidden flex flex-col shadow-lg hover:shadow-xl hover:border-gray-300 hover:scale-105 transition duration-300 cursor-pointer"
@@ -34,10 +52,10 @@ projects.forEach((project) => {
         alt=""
       />
 
-      <div class="flex flex-col gap-3 p-3 md:p-4 grow-1">
-        <h3 class="font-bold">${project.title}</h3>
+      <div class="flex flex-col gap-3 p-3 md:p-4 grow">
+        <h3 class="font-bold">${cardTitle}</h3>
         <p class="text-gray-600 text-sm">
-          ${project.description}
+          ${cardDescription}
         </p>
       </div>
 
@@ -74,7 +92,7 @@ projects.forEach((project) => {
               d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
             ></path>
           </svg>
-          <span>2 month ago</span>
+          <span>${dateDiff(project.publishedOn)}</span>
         </div>
       </div>
     </div>
