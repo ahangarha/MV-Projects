@@ -24,6 +24,8 @@ const projectContainter = document.getElementById('projectContainter');
 if (projects.length) projectContainter.innerHTML = '';
 
 projects.forEach((project) => {
+  const cardTitle = project.title.length > 45 ? project.title.slice(0,40).concat('...') : project.title;
+  const cardDescription = project.description.length > 100 ? project.description.slice(0,90).concat('...') : project.description;
   projectContainter.innerHTML += `
   <div
       class="border rounded-lg overflow-hidden flex flex-col shadow-lg hover:shadow-xl hover:border-gray-300 hover:scale-105 transition duration-300 cursor-pointer"
@@ -35,9 +37,9 @@ projects.forEach((project) => {
       />
 
       <div class="flex flex-col gap-3 p-3 md:p-4 grow">
-        <h3 class="font-bold">${project.title}</h3>
+        <h3 class="font-bold">${cardTitle}</h3>
         <p class="text-gray-600 text-sm">
-          ${project.description}
+          ${cardDescription}
         </p>
       </div>
 
