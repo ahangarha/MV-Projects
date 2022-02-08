@@ -18,5 +18,5 @@ export default [
     license: 'MIT',
     screenshot: 'https://github.com/mirouhml/anime-convention-project/raw/main/src/screenshot.png',
     publishedOn: '2022-02-01',
-  }
+  },
 ];
