@@ -34,7 +34,7 @@ projects.forEach((project) => {
         alt=""
       />
 
-      <div class="flex flex-col gap-3 p-3 md:p-4 grow-1">
+      <div class="flex flex-col gap-3 p-3 md:p-4 grow">
         <h3 class="font-bold">${project.title}</h3>
         <p class="text-gray-600 text-sm">
           ${project.description}
