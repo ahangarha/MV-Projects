@@ -10,8 +10,8 @@ export default [
     publishedOn: '2022-02-03',
   },
   {
-    title: 'Capstone - Module 1',
-    description: 'Creative Anime Convetion 2022 is the gathering of everything anime and otaku culture, celebrating the many aspects of Japanese pop culture and its influence on the world,taking place in Algeria.',
+    title: 'Module 1 capstone project - Creative Anime Convention website',
+    description: 'This website is for an anime convention it has two pages a home page and about page, the home page contains information about the convention (events, guests and sponsors) and the about page contains information about the ones holding the anime convention.',
     author: 'Ammar Hamlaoui',
     ghUsername: 'mirouhml',
     repo: 'https://github.com/mirouhml/anime-convention-project',
