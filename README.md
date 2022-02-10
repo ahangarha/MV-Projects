@@ -15,6 +15,13 @@ $ npm run build
 ```
 By now, your `style.css` must be generated in `./dist` directory. Open `index.html` in browswer.
 
+If you want to change HTML and add Tailwindcss classes, run the following commant:
+
+```
+$ npm run watch
+```
+Now, by editing HTML and adding classes, the relevant class gets added to the `style.css` on the fly. If using this, you won't need to run `npm run build` anymore.
+
 ## License
 
 This is Free/Libre and Open Source software under [AGPL-3.0+](./LICENSE) license.
