@@ -16,7 +16,7 @@ toggleMenuBtns.forEach((btn) => {
 
 menuItems.forEach((item) => {
   item.addEventListener('click', (event) => toggleMenu(event, false));
-})
+});
 
 function dateDiff(dateStr) {
   const now = Date.now();
@@ -40,8 +40,21 @@ const projectContainter = document.getElementById('projectContainter');
 if (projects.length) projectContainter.innerHTML = '';
 
 projects.forEach((project) => {
-  const cardTitle = project.title.length > 45 ? project.title.slice(0,40).concat('...') : project.title;
-  const cardDescription = project.description.length > 100 ? project.description.slice(0,90).concat('...') : project.description;
+  const cardTitle =
+    project.title.length > 45
+      ? project.title.slice(0, 40).concat('...')
+      : project.title;
+  const cardDescription =
+    project.description.length > 100
+      ? project.description.slice(0, 90).concat('...')
+      : project.description;
+
+  let techs = project.techs.map(
+    (tech) => `<li class="text-yellow-700 rounded">${tech}</li>`
+  );
+  techs = `<ul class="text-xs flex flex-wrap font-bold gap-1">${techs.join(
+    ''
+  )}</ul>`;
   projectContainter.innerHTML += `
   <div
       class="border rounded-lg overflow-hidden flex flex-col shadow-lg hover:shadow-xl hover:border-gray-300 hover:scale-105 transition duration-300 cursor-pointer"
@@ -54,6 +67,7 @@ projects.forEach((project) => {
 
       <div class="flex flex-col gap-3 p-3 md:p-4 grow">
         <h3 class="font-bold">${cardTitle}</h3>
+        ${techs}
         <p class="text-gray-600 text-sm">
           ${cardDescription}
         </p>
@@ -97,4 +111,4 @@ projects.forEach((project) => {
       </div>
     </div>
   `;
-})
+});
