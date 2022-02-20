@@ -10,6 +10,7 @@ export default [
       'https://github.com/ahangarha/SFD2022-sample-design/raw/main/screenshot.png',
     publishedOn: '2022-02-03',
     techs: ['HTML/CSS'],
+    module: 1,
   },
   {
     title: 'Module 1 capstone project - Creative Anime Convention website',
@@ -23,5 +24,6 @@ export default [
       'https://github.com/mirouhml/anime-convention-project/raw/main/src/screenshot.png',
     publishedOn: '2022-02-01',
     techs: ['HTML/CSS'],
+    module: 1,
   },
 ];
