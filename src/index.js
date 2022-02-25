@@ -23,7 +23,6 @@ function dateDiff(dateStr) {
   const date = new Date(dateStr);
 
   const diffDays = Math.floor((now - date) / (1000 * 60 * 60 * 24));
-  console.log(now);
 
   if (diffDays >= 60) {
     return `${Math.floor(diffDays / 30)} months ago`;
