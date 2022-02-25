@@ -6,6 +6,9 @@ This is an unofficial selection of projects made by stundents in [Microverse](ht
 
 Edit [`./src/data.js`](https://github.com/ahangarha/MV-Projects/blob/main/src/data.js) file and add required information in proper format. Make sure nothing else is touched. Then send a PR.
 
+## How to Contribute
+Please read the [guideline](./CONTRIBUTING.md).
+
 ## Run Locally
 
 You need `node` and `npm` installed on your machine. If so, Get the code and run the following commands:
