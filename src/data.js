@@ -1,5 +1,6 @@
 export default [
   {
+    id: 1,
     title: 'Capstone - Module 1',
     description: 'the description',
     author: 'Mostafa Ahangarha',
@@ -13,6 +14,7 @@ export default [
     module: 1,
   },
   {
+    id: 2,
     title: 'Module 1 capstone project - Creative Anime Convention website',
     description:
       'This website is for an anime convention it has two pages a home page and about page, the home page contains information about the convention (events, guests and sponsors) and the about page contains information about the ones holding the anime convention.',

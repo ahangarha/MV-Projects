@@ -1,3 +1,4 @@
+import './style.css';
 import projects from './data.js';
 
 const toggleMenuBtns = document.querySelectorAll('#openMenu, #closeMenu');
@@ -26,11 +27,11 @@ function dateDiff(dateStr) {
 
   if (diffDays >= 60) {
     return `${Math.floor(diffDays / 30)} months ago`;
-  } else if (diffDays >= 30) {
-    return `${Math.floor(diffDays / 30)} month ago`;
-  } else {
-    return `${diffDays} days ago`;
   }
+  if (diffDays >= 30) {
+    return `${Math.floor(diffDays / 30)} month ago`;
+  }
+  return `${diffDays} days ago`;
 }
 
 // inject projects
@@ -39,21 +40,19 @@ const projectContainter = document.getElementById('projectContainter');
 if (projects.length) projectContainter.innerHTML = '';
 
 projects.forEach((project) => {
-  const cardTitle =
-    project.title.length > 45
-      ? project.title.slice(0, 40).concat('...')
-      : project.title;
-  const cardDescription =
-    project.description.length > 100
-      ? project.description.slice(0, 90).concat('...')
-      : project.description;
+  const cardTitle = project.title.length > 45
+    ? project.title.slice(0, 40).concat('...')
+    : project.title;
+  const cardDescription = project.description.length > 100
+    ? project.description.slice(0, 90).concat('...')
+    : project.description;
 
   let techs = project.techs.map(
-    (tech) => `<li class="text-yellow-700 rounded">${tech}</li>`
+    (tech) => `<li class="text-yellow-700 rounded">${tech}</li>`,
   );
-  techs = `<ul class="text-xs flex flex-wrap font-bold gap-1">${techs.join(
-    ''
-  )}</ul>`;
+  techs = `<ul class="text-xs flex flex-wrap font-bold gap-1">
+    ${techs.join('')}
+  </ul>`;
   projectContainter.innerHTML += `
   <div
       class="border rounded-lg overflow-hidden flex flex-col shadow-lg hover:shadow-xl hover:border-gray-300 hover:scale-105 transition duration-300 cursor-pointer"
