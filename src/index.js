@@ -1,3 +1,4 @@
+import './style.css';
 import projects from './data.js';
 
 const toggleMenuBtns = document.querySelectorAll('#openMenu, #closeMenu');
