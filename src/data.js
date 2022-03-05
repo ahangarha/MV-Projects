@@ -28,4 +28,18 @@ export default [
     techs: ['HTML/CSS'],
     module: 1,
   },
+  {
+    id: 3,
+    title: 'HTML/CSS capstone project - Marock music festival',
+    description:
+      "This project was built with a Mobile-first design perspective and it's mobile responsive. for the design, the main technologies in CSS are flexbox and media query. The Festival was inspired by the Boulevard urban music festival in Morocco.",
+    author: 'Ismail Courr',
+    ghUsername: 'ismailco',
+    repo: 'https://github.com/Ismailco/First-capstone-project_Conference-page',
+    license: 'GPL-3.0',
+    screenshot: 'https://ismailcourr.ml/img/projects/marock/preview1.png',
+    publishedOn: '2022-02-04',
+    techs: ['HTML/CSS'],
+    module: 1,
+  },
 ];
