@@ -13,4 +13,4 @@ You are done. I will get notified and then take the next steps accordingly.
 
 If later you need to contribute, you need to first make sure your fork is up to date. You should see a button on your fork for synchronization. After that, you need to use `git pull` on your clone (on you local machine) to get latest commits and then the rest is the same...
 
-This project is under AGPL license. 
+This project is under AGPL license.

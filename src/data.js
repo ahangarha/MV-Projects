@@ -30,6 +30,21 @@ export default [
   },
   {
     id: 3,
+    title: 'Module 1 capstone project - Talanta Mtaani',
+    description:
+      'The project is about a music competition that aims to help the underprevileged young people to showcase their talents. With the hope that they will get a platform to sign deals and start producing professional music.',
+    author: 'Nemwel Boniface',
+    ghUsername: 'Nemwel-Boniface',
+    repo: 'https://github.com/Nemwel-Boniface/Talanta-Mtaani',
+    license: 'MIT',
+    screenshot:
+      'https://github.com/Nemwel-Boniface/Talanta-Mtaani/raw/main/images/TalantaM-DV.png',
+    publishedOn: '2022-02-02',
+    techs: ['HTML/CSS'],
+    module: 1,
+  },
+  {
+    id: 4,
     title: 'HTML/CSS capstone project - Marock music festival',
     description:
       "This project was built with a Mobile-first design perspective and it's mobile responsive. for the design, the main technologies in CSS are flexbox and media query. The Festival was inspired by the Boulevard urban music festival in Morocco.",
@@ -41,5 +56,5 @@ export default [
     publishedOn: '2022-02-04',
     techs: ['HTML/CSS'],
     module: 1,
-  },
+  }
 ];
