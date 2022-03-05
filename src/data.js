@@ -56,5 +56,5 @@ export default [
     publishedOn: '2022-02-04',
     techs: ['HTML/CSS'],
     module: 1,
-  }
+  },
 ];
