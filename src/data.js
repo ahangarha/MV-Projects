@@ -67,7 +67,7 @@ export default [
     license: 'MIT',
     screenshot: 'https://github.com/kosher9/tech_event/raw/master/images/preview.png',
     publishedOn: '2022-02-09',
-    techs: ['HTML/CSS'],
+    techs: ['HTML/CSS & JavaScript'],
     module: 1,
   },
 ];
