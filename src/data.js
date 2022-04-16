@@ -70,4 +70,18 @@ export default [
     techs: ['HTML/CSS', 'JavaScript'],
     module: 1,
   },
+  {
+    id: 6,
+    title: 'CovidWatch',
+    description: 'A web application to check latest daily statistics of new Covid-19 confirmed cases',
+    author: 'Mostafa Ahangarha',
+    ghUsername: 'ahangarha',
+    repo: 'https://github.com/ahangarha/CovidWatch/',
+    license: 'AGPL',
+    screenshot:
+      'https://github.com/ahangarha/CovidWatch/raw/develop/screenshot.png',
+    publishedOn: '2022-04-15',
+    techs: ['HTML/CSS', 'React', 'Redux', 'Tailwindcss'],
+    module: 3,
+  },
 ];
