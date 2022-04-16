@@ -57,4 +57,17 @@ export default [
     techs: ['HTML/CSS'],
     module: 1,
   },
+  {
+    id: 5,
+    title: 'Module 1 Capstone project - Tech Events',
+    description: 'This project is a website for tech events.',
+    author: 'Cedric KOSSI',
+    ghUsername: 'kosher9',
+    repo: 'https://github.com/kosher9/tech_event',
+    license: 'MIT',
+    screenshot: 'https://github.com/kosher9/tech_event/raw/master/images/preview.png',
+    publishedOn: '2022-02-09',
+    techs: ['HTML/CSS', 'JavaScript'],
+    module: 1,
+  },
 ];
