@@ -126,4 +126,18 @@ export default [
     techs: ['HTML/CSS', 'JavaScript', 'Scss'],
     module: 2,
   },
+  {
+    id: 10,
+    title: 'Taste Jamaica',
+    description: 'See a list of Jamaican meals, like them, or leave comments for each. ',
+    author: 'Mostafa Ahangarha, David Ouma',
+    ghUsername: 'ahangarha',
+    repo: 'https://github.com/ahangarha/JavaScript-Capstone/',
+    license: 'MIT',
+    screenshot:
+      'https://github.com/ahangarha/JavaScript-Capstone/raw/develop/screenshot.png',
+    publishedOn: '2022-03-27',
+    techs: ['HTML/CSS', 'JavaScript', 'Jest'],
+    module: 2,
+  },
 ];
