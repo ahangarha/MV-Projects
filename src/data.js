@@ -154,4 +154,18 @@ export default [
     techs: ['HTML/CSS', 'React', 'Jest'],
     module: 3,
   },
+  {
+    id: 11,
+    title: 'Todolist (js)',
+    description: 'A simple ToDo list project made by JavaScript. One can add, edit and remove todos as well as marking them as completed.',
+    author: 'Mostafa Ahangarha',
+    ghUsername: 'ahangarha',
+    repo: 'https://github.com/ahangarha/MV-ToDo-List',
+    license: 'AGPL',
+    screenshot:
+      'https://github.com/ahangarha/MV-ToDo-List/raw/main/screenshot.png',
+    publishedOn: '2022-03-18',
+    techs: ['HTML/CSS', 'JavaScript'],
+    module: 2,
+  },
 ];
