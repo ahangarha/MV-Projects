@@ -112,4 +112,18 @@ export default [
     techs: ['HTML/CSS', 'React'],
     module: 3,
   },
+  {
+    id: 9,
+    title: 'To Do List',
+    description: 'Keep a track of all the tasks you need to do and Check off ones you have completed - Created using HTML, SCSS, JavaScript and Webpack.',
+    author: 'Awais Amjed',
+    ghUsername: 'awais-amjed',
+    repo: 'https://github.com/awais-amjed/to-do-list',
+    license: '-',
+    screenshot:
+      'https://github.com/awais-amjed/to-do-list/raw/master/app_screenshot.png',
+    publishedOn: '2022-02-23',
+    techs: ['HTML/CSS', 'JavaScript', 'Scss'],
+    module: 2,
+  },
 ];
