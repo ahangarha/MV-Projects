@@ -140,4 +140,18 @@ export default [
     techs: ['HTML/CSS', 'JavaScript', 'Jest'],
     module: 2,
   },
+  {
+    id: 11,
+    title: 'Math Magicians',
+    description: ' An educational project for making a calculator with Reactjs.',
+    author: 'Mostafa Ahangarha',
+    ghUsername: 'ahangarha',
+    repo: 'https://github.com/ahangarha/MV-MathMagicians/',
+    license: 'AGPL',
+    screenshot:
+      'https://github.com/ahangarha/MV-MathMagicians/raw/develop/screenshot.png',
+    publishedOn: '2022-03-25',
+    techs: ['HTML/CSS', 'React', 'Jest'],
+    module: 3,
+  },
 ];
