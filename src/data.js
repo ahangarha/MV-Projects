@@ -98,4 +98,18 @@ export default [
     techs: ['HTML/CSS', 'React', 'Scss'],
     module: 3,
   },
+  {
+    id: 8,
+    title: 'Giggy',
+    description: 'This is a Web Application with some jokes related to coding & Dark Humor. Created with data from the JokeAPI.',
+    author: 'Awais Amjed',
+    ghUsername: 'awais-amjed',
+    repo: 'https://github.com/awais-amjed/giggy',
+    license: 'MIT',
+    screenshot:
+      'https://github.com/awais-amjed/giggy/raw/dev/home_page_screenshot.png',
+    publishedOn: '2022-03-12',
+    techs: ['HTML/CSS', 'React'],
+    module: 3,
+  },
 ];
