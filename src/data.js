@@ -84,4 +84,18 @@ export default [
     techs: ['HTML/CSS', 'React', 'Redux', 'Tailwindcss'],
     module: 3,
   },
+  {
+    id: 7,
+    title: 'Math Magicians',
+    description: 'Math Magicians is a Single Page Application (SPA) created in React that allows users to make simple calculations & Read some famous Quotes.',
+    author: 'Awais Amjed',
+    ghUsername: 'awais-amjed',
+    repo: 'https://github.com/awais-amjed/math-magicians',
+    license: 'MIT',
+    screenshot:
+      'https://raw.githubusercontent.com/awais-amjed/math-magicians/development/app_screenshot.png',
+    publishedOn: '2022-04-11',
+    techs: ['HTML/CSS', 'React', 'Scss'],
+    module: 3,
+  },
 ];
