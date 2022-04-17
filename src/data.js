@@ -102,7 +102,7 @@ export default [
     id: 8,
     title: 'Giggy',
     description: 'This is a Web Application with some jokes related to coding & Dark Humor. Created with data from the JokeAPI.',
-    author: 'Awais Amjed',
+    author: 'Awais Amjed,  Akumu Bavon',
     ghUsername: 'awais-amjed',
     repo: 'https://github.com/awais-amjed/giggy',
     license: 'MIT',
