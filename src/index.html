@@ -47,8 +47,21 @@
       </p>
     </section>
 
+    <section class="w-full xl:max-w-6xl rounded-lg mt-8 xl:mx-auto inset-x-0 flex justify-between items-center bg-indigo-900 px-6 text-white z-40">
+      <form>
+        <label for="searchBar" hidden></label>
+        <input type="search" id="searchBar" name="searchBar" placeholder="Search..." class="text-lg font-bold py-2 bg-indigo-900 outline-0">
+      </form>
+      <label for="sortOptions" hidden></label>
+      <select name="sortOptions" id="sortOptions" class="text-lg font-bold py-2 px-3 bg-indigo-900 outline-0">
+        <option value="Date">Date</option>
+        <option value="Module">Module</option>
+        <option value="Author">Author</option>
+      </select>
+    </section>
+
     <main id="projectContainter"
-      class="w-full xl:max-w-6xl xl:mx-auto grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 px-4 py-8"
+      class="w-full xl:max-w-6xl xl:mx-auto grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 px-4 py-4"
     >
       <div class="text-center col-span-full py-16">No project to show!</div>
     </main>

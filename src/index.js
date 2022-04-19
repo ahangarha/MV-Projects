@@ -4,12 +4,15 @@ import projects from './data.js';
 const toggleMenuBtns = document.querySelectorAll('#openMenu, #closeMenu');
 const menu = document.getElementById('menu');
 const menuItems = document.querySelectorAll('#menu .menuLinks');
+const sortOptions = document.getElementById('sortOptions');
 
 function toggleMenu(event, prevent = true) {
   if (prevent) event.preventDefault();
   menu.classList.toggle('hidden');
   document.body.classList.toggle('overflow-y-hidden');
 }
+
+sortOptions.addEventListener('change', () => sort(String(sortOptions.value)));
 
 toggleMenuBtns.forEach((btn) => {
   btn.addEventListener('click', (event) => toggleMenu(event));
@@ -34,26 +37,46 @@ function dateDiff(dateStr) {
   return `${diffDays} days ago`;
 }
 
-// inject projects
-const projectContainter = document.getElementById('projectContainter');
+function sort(type) {
+  switch (type) {
+    case 'Date':
+      projects.sort((b, a) => a.publishedOn.localeCompare(b.publishedOn));
+      break;
+    case 'Module':
+      projects.sort((b, a) => String(a.module).localeCompare(String(b.module)));
+      break;
+    case 'Author':
+      projects.sort((a, b) => a.author.localeCompare(b.author));
+      break;
+    default:
+      projects.sort((b, a) => a.id.localeCompare(b.id));
+      break;
+  }
+  renderProjects();
 
-if (projects.length) projectContainter.innerHTML = '';
+}
 
-projects.forEach((project) => {
-  const cardTitle = project.title.length > 45
-    ? project.title.slice(0, 40).concat('...')
-    : project.title;
-  const cardDescription = project.description.length > 100
-    ? project.description.slice(0, 90).concat('...')
-    : project.description;
+function renderProjects() {
+  // inject projects
+  const projectContainter = document.getElementById('projectContainter');
 
-  let techs = project.techs.map(
-    (tech) => `<li class="text-yellow-700 rounded">${tech}</li>`,
-  );
-  techs = `<ul class="text-xs flex flex-wrap font-bold gap-1">
+  if (projects.length) projectContainter.innerHTML = '';
+
+  projects.forEach((project) => {
+    const cardTitle = project.title.length > 45
+      ? project.title.slice(0, 40).concat('...')
+      : project.title;
+    const cardDescription = project.description.length > 100
+      ? project.description.slice(0, 90).concat('...')
+      : project.description;
+
+    let techs = project.techs.map(
+      (tech) => `<li class="text-yellow-700 rounded">${tech}</li>`,
+    );
+    techs = `<ul class="text-xs flex flex-wrap font-bold gap-1">
     ${techs.join('')}
   </ul>`;
-  projectContainter.innerHTML += `
+    projectContainter.innerHTML += `
   <div
       class="border rounded-lg overflow-hidden flex flex-col shadow-lg hover:shadow-xl hover:border-gray-300 hover:scale-105 transition duration-300 cursor-pointer"
     >
@@ -109,4 +132,8 @@ projects.forEach((project) => {
       </div>
     </div>
   `;
-});
+  });
+}
+
+sort('Date');
+renderProjects();
