@@ -143,7 +143,7 @@ export default [
   {
     id: 11,
     title: 'Math Magicians',
-    description: ' An educational project for making a calculator with Reactjs.',
+    description: 'An educational project for making a calculator with Reactjs.',
     author: 'Mostafa Ahangarha',
     ghUsername: 'ahangarha',
     repo: 'https://github.com/ahangarha/MV-MathMagicians/',
@@ -167,5 +167,19 @@ export default [
     publishedOn: '2022-03-18',
     techs: ['HTML/CSS', 'JavaScript'],
     module: 2,
+  },
+  {
+    id: 12,
+    title: 'Covid-19 Tracker',
+    description: 'This is a website that shows recent and old data of Covid-19 stats for all the countries of the world, it uses this API as the data source.',
+    author: 'Ammar Hamlaoui',
+    ghUsername: 'mirouhml',
+    repo: 'https://github.com/mirouhml/covid-19-tracker',
+    license: 'MIT',
+    screenshot:
+      'https://user-images.githubusercontent.com/20567503/163427412-b95568c1-fc81-47e6-91d4-392432f5a425.png',
+    publishedOn: '2022-04-14',
+    techs: ['HTML/CSS', 'React', 'Redux'],
+    module: 3,
   },
 ];
