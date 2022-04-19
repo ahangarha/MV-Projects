@@ -196,4 +196,18 @@ export default [
     techs: ['HTML/CSS', 'React'],
     module: 3,
   },
+  {
+    id: 14,
+    title: 'To-Do-List',
+    description: 'This is a website for a simple to do list, where you can add and remove tasks, edit and reorder them as you see fit.',
+    author: 'Ammar Hamlaoui',
+    ghUsername: 'mirouhml',
+    repo: 'https://github.com/mirouhml/To-Do-list',
+    license: 'MIT',
+    screenshot:
+      'https://github.com/mirouhml/To-Do-list/raw/main/src/asset/screenshot.png',
+    publishedOn: '2022-02-24',
+    techs: ['HTML/CSS', 'JavaScript'],
+    module: 2,
+  },
 ];
