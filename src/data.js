@@ -182,4 +182,18 @@ export default [
     techs: ['HTML/CSS', 'React', 'Redux'],
     module: 3,
   },
+  {
+    id: 13,
+    title: 'Math Magicians',
+    description: 'This is Math Magicians website, it has a calculator and some quotes about maths.',
+    author: 'Ammar Hamlaoui',
+    ghUsername: 'mirouhml',
+    repo: 'https://github.com/mirouhml/math-magicians',
+    license: 'MIT',
+    screenshot:
+      'https://user-images.githubusercontent.com/20567503/159556805-5e59baaf-171f-4f46-983f-a85bf3abc1ee.png',
+    publishedOn: '2022-03-23',
+    techs: ['HTML/CSS', 'React'],
+    module: 3,
+  },
 ];
