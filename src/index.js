@@ -8,6 +8,7 @@ const sortOptions = document.getElementById('sortOptions');
 const sortDirBtns = document.getElementsByName('sort');
 
 let sortDir = 'asc';
+let sortType = 'date';
 
 function toggleMenu(event, prevent = true) {
   if (prevent) event.preventDefault();
@@ -109,9 +110,9 @@ function renderProjects() {
   });
 }
 
-function sort(type) {
+function sort() {
   if (String(sortDir) === 'asc') {
-    switch (type) {
+    switch (sortType) {
       case 'Date':
         projects.sort((b, a) => a.publishedOn.localeCompare(b.publishedOn));
         break;
@@ -126,7 +127,7 @@ function sort(type) {
         break;
     }
   } else {
-    switch (type) {
+    switch (sortType) {
       case 'Date':
         projects.sort((a, b) => a.publishedOn.localeCompare(b.publishedOn));
         break;
@@ -144,12 +145,15 @@ function sort(type) {
   renderProjects();
 }
 
-sortOptions.addEventListener('change', () => sort(String(sortOptions.value)));
+sortOptions.addEventListener('change', () => {
+  sortType = String(sortOptions.value);
+  sort(String(sortOptions.value));
+});
 
 sortDirBtns.forEach((btn) => {
-  btn.addEventListener('click', (event) => {
+  btn.addEventListener('click', () => {
     sortDir = String(btn.value);
-    sort(event);
+    sort();
   });
 });
 
@@ -161,5 +165,5 @@ menuItems.forEach((item) => {
   item.addEventListener('click', (event) => toggleMenu(event, false));
 });
 
-sort('Date');
+sort();
 renderProjects();
