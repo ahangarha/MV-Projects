@@ -48,16 +48,18 @@
     </section>
 
     <section class="w-full xl:max-w-6xl rounded-lg mt-8 xl:mx-auto inset-x-0 flex justify-between items-center bg-indigo-900 px-6 text-white z-40">
-      <form>
-        <label for="searchBar" hidden></label>
-        <input type="search" id="searchBar" name="searchBar" placeholder="Search..." class="text-lg font-bold py-2 bg-indigo-900 outline-0">
-      </form>
       <label for="sortOptions" hidden></label>
       <select name="sortOptions" id="sortOptions" class="text-lg font-bold py-2 px-3 bg-indigo-900 outline-0">
         <option value="Date">Date</option>
         <option value="Module">Module</option>
         <option value="Author">Author</option>
       </select>
+      <div id="radioHolder" class="fixed sm:block sm:static sm:p-0 sm:bg-none inset-0 font-bold">
+        <label for="ascSort">ascending</label>
+        <input type="radio" id="ascSort" name="sort" value="asc" checked>
+        <label for="descSort">descending</label>
+        <input type="radio" id="descSort" name="sort" value="desc">
+      </div>
     </section>
 
     <main id="projectContainter"

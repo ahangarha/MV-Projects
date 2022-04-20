@@ -5,22 +5,15 @@ const toggleMenuBtns = document.querySelectorAll('#openMenu, #closeMenu');
 const menu = document.getElementById('menu');
 const menuItems = document.querySelectorAll('#menu .menuLinks');
 const sortOptions = document.getElementById('sortOptions');
+const sortDirBtns = document.getElementsByName('sort');
+
+let sortDir = 'asc';
 
 function toggleMenu(event, prevent = true) {
   if (prevent) event.preventDefault();
   menu.classList.toggle('hidden');
   document.body.classList.toggle('overflow-y-hidden');
 }
-
-sortOptions.addEventListener('change', () => sort(String(sortOptions.value)));
-
-toggleMenuBtns.forEach((btn) => {
-  btn.addEventListener('click', (event) => toggleMenu(event));
-});
-
-menuItems.forEach((item) => {
-  item.addEventListener('click', (event) => toggleMenu(event, false));
-});
 
 function dateDiff(dateStr) {
   const now = Date.now();
@@ -35,25 +28,6 @@ function dateDiff(dateStr) {
     return `${Math.floor(diffDays / 30)} month ago`;
   }
   return `${diffDays} days ago`;
-}
-
-function sort(type) {
-  switch (type) {
-    case 'Date':
-      projects.sort((b, a) => a.publishedOn.localeCompare(b.publishedOn));
-      break;
-    case 'Module':
-      projects.sort((b, a) => String(a.module).localeCompare(String(b.module)));
-      break;
-    case 'Author':
-      projects.sort((a, b) => a.author.localeCompare(b.author));
-      break;
-    default:
-      projects.sort((b, a) => a.id.localeCompare(b.id));
-      break;
-  }
-  renderProjects();
-
 }
 
 function renderProjects() {
@@ -134,6 +108,58 @@ function renderProjects() {
   `;
   });
 }
+
+function sort(type) {
+  if (String(sortDir) === 'asc') {
+    switch (type) {
+      case 'Date':
+        projects.sort((b, a) => a.publishedOn.localeCompare(b.publishedOn));
+        break;
+      case 'Module':
+        projects.sort((b, a) => String(a.module).localeCompare(String(b.module)));
+        break;
+      case 'Author':
+        projects.sort((b, a) => a.author.localeCompare(b.author));
+        break;
+      default:
+        projects.sort((b, a) => String(a.id).localeCompare(String(b.id)));
+        break;
+    }
+  } else {
+    switch (type) {
+      case 'Date':
+        projects.sort((a, b) => a.publishedOn.localeCompare(b.publishedOn));
+        break;
+      case 'Module':
+        projects.sort((a, b) => String(a.module).localeCompare(String(b.module)));
+        break;
+      case 'Author':
+        projects.sort((a, b) => a.author.localeCompare(b.author));
+        break;
+      default:
+        projects.sort((a, b) => String(a.id).localeCompare(String(b.id)));
+        break;
+    }
+  }
+  renderProjects();
+}
+
+sortOptions.addEventListener('change', () => sort(String(sortOptions.value)));
+
+sortDirBtns.forEach((btn) => {
+  btn.addEventListener('click', (event) => {
+    sortDir = String(btn.value);
+    sort(event);
+  });
+});
+
+toggleMenuBtns.forEach((btn) => {
+  btn.addEventListener('click', (event) => toggleMenu(event));
+});
+
+menuItems.forEach((item) => {
+  item.addEventListener('click', (event) => toggleMenu(event, false));
+});
 
 sort('Date');
 renderProjects();
