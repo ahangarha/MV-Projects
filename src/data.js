@@ -238,4 +238,18 @@ export default [
     techs: ['HTML/CSS', 'JavaScript', 'Webpack', 'API'],
     module: 2,
   },
+  {
+    id: 17,
+    title: 'CC-Global-Summit',
+    description: 'The Culture Custodian Global Fashion Summit website is provides information about the event, speakers, and how guests can attend the event',
+    author: 'Sodiq Aderibigbe',
+    ghUsername: 'deyemiobaa',
+    repo: 'https://github.com/deyemiobaa/CC-global-summit',
+    license: 'MIT',
+    screenshot:
+      'https://raw.githubusercontent.com/deyemiobaa/CC-global-summit/050b356a70e6320e11bfab353c1a09ac5826ed49/images/project-snapshot.svg',
+    publishedOn: '2022-04-21',
+    techs: ['HTML/CSS', 'JavaScript'],
+    module: 1,
+  },
 ];
