@@ -220,7 +220,7 @@ export default [
     license: 'MIT',
     screenshot:
       'https://raw.githubusercontent.com/deyemiobaa/ToDo-List/main/src/images/app-sc.png',
-    publishedOn: '2022-04-21',
+    publishedOn: '2022-04-05',
     techs: ['HTML/CSS', 'JavaScript', 'Webpack'],
     module: 2,
   },
@@ -234,7 +234,7 @@ export default [
     license: 'MIT',
     screenshot:
       'https://raw.githubusercontent.com/deyemiobaa/Movie-Database/dev/src/app-sc.png',
-    publishedOn: '2022-04-21',
+    publishedOn: '2022-04-15',
     techs: ['HTML/CSS', 'JavaScript', 'Webpack', 'API'],
     module: 2,
   },
@@ -248,7 +248,7 @@ export default [
     license: 'MIT',
     screenshot:
       'https://raw.githubusercontent.com/deyemiobaa/CC-global-summit/050b356a70e6320e11bfab353c1a09ac5826ed49/images/project-snapshot.svg',
-    publishedOn: '2022-04-21',
+    publishedOn: '2022-03-15',
     techs: ['HTML/CSS', 'JavaScript'],
     module: 1,
   },
