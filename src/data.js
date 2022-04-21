@@ -210,4 +210,32 @@ export default [
     techs: ['HTML/CSS', 'JavaScript'],
     module: 2,
   },
+  {
+    id: 15,
+    title: 'ToDo-List',
+    description: 'This is a website A web app that helps you keep track of your most important tasks. You can add, delete, edits tasks as you wish, and they always stay on your browser.',
+    author: 'Sodiq Aderibigbe',
+    ghUsername: 'deyemiobaa',
+    repo: 'https://github.com/deyemiobaa/ToDo-List',
+    license: 'MIT',
+    screenshot:
+      'https://raw.githubusercontent.com/deyemiobaa/ToDo-List/main/src/images/app-sc.png',
+    publishedOn: '2022-04-21',
+    techs: ['HTML/CSS', 'JavaScript', 'Webpack'],
+    module: 2,
+  },
+  {
+    id: 16,
+    title: 'ShowBox Movies',
+    description: 'Search for info about your favorite movies and tv shows on the ShowBox Movie Database',
+    author: 'Sodiq Aderibigbe, Sentayhu berhanu',
+    ghUsername: 'deyemiobaa',
+    repo: 'https://github.com/deyemiobaa/Movie-Database',
+    license: 'MIT',
+    screenshot:
+      'https://raw.githubusercontent.com/deyemiobaa/Movie-Database/dev/src/app-sc.png',
+    publishedOn: '2022-04-21',
+    techs: ['HTML/CSS', 'JavaScript', 'Webpack', 'API'],
+    module: 2,
+  },
 ];
